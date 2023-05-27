@@ -1,8 +1,7 @@
 import express from "express";
 const route = express.Router();
+import getlistitems from "../controller/todoitems.js";
 
-route.get("/", (req, res) => {
-  res.send("hello world from todoitems");
-});
+route.route("/").get(getlistitems);
 
 export default route;

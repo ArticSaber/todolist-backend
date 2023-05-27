@@ -4,7 +4,7 @@ import todoitems  from "./routes/todoitems.js";
 
 const app = Express();
 const port = 3000;
-app.use("/todoitems", todoitems);
+app.use("/api/vi/todos", todoitems);
 app.use(Express.json());
 app.use(cors());
 app.get("/", (req, res) => {
