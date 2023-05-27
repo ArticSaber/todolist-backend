@@ -2,4 +2,8 @@ const getlistitems = async (req, res) => {
   res.send("todo items list");
 };
 
-export default getlistitems;
+const createtodo = async (req, res) => {
+  res.send(req.body);
+};
+
+export { getlistitems, createtodo };
